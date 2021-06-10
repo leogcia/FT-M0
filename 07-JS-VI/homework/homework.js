@@ -58,6 +58,13 @@ function map(array, cb) {
     return cb(elemento);
   });
   return nuevo;
+
+  //La función 'map' ya genera un array de manera nativa, por lo que también podría ser: 
+
+  // return array.map(function(elemento){
+  //   return cb(elemento);
+  // });
+
 }
 
 function filter(array) {
